@@ -1,0 +1,299 @@
+.home-container {
+    /* display: flex; */
+    height: 100vh;
+}
+
+/* Header */
+
+.home-container .header-container {
+    height: 64px;
+    margin-top: 0px;
+    background-color: #1a2332;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+.home-container .header-container .header-content {
+    height: 56px;
+    background-color: #1a2332;
+    padding-bottom: 8px;
+    display: flex;
+}
+
+/* Left */
+
+.home-container .header-container .header-content .content-left {
+    width: 60%;
+    height: 100%;
+    background-color: #1a2332;
+    padding-top: 7px;
+    display: flex;
+}
+
+.home-container .header-container .header-content .content-left .logo {
+    height: 35px;
+    width: 25%;
+    background-color: transparent;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.home-container .header-container .header-content .content-left .search {
+    height: 40px;
+    width: 30%;
+    margin-left: 30px;
+    margin-top: 5px;
+    background-color: #141d2b;
+    border-radius: 3px;
+}
+
+.home-container .header-container .header-content .content-left .search i {
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.home-container .header-container .header-content .content-left .search input {
+    height: 80%;
+    width: 80%;
+    background-color: transparent;
+    margin-top: 1px;
+    border: none;
+}
+
+.home-container .header-container .header-content .content-left button {
+    background-color: #111927;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    width: 150px;
+    color: greenyellow;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.home-container .header-container .header-content .content-left button:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+/* Right */
+
+.home-container .header-container .header-content .content-right {
+    width: 40%;
+    height: 100%;
+    background-color: #1a2332;
+    padding-top: 7px;
+    display: flex;
+}
+
+.home-container .header-container .header-content .content-right .shop {
+    color: #ccc;
+    font-size: 20px;
+    margin-top: -5px;
+    margin-left: 20px;
+    border-right: 1px solid black;
+    padding:15px ; 
+    cursor: pointer;
+} 
+
+.home-container .header-container .header-content .content-right .feedback {
+    color: #ccc;
+    font-size: 20px;
+    margin-top: -5px;
+    margin-left: 20px;
+    border-right: 1px solid black;
+    padding:15px ; 
+    cursor: pointer;
+} 
+
+.home-container .header-container .header-content .content-right .help {
+    color: #ccc;
+    font-size: 20px;
+    margin-top: -5px;
+    margin-left: 20px;
+    border-right: 1px solid black;
+    padding:15px ; 
+    cursor: pointer;
+}
+
+.home-container .header-container .header-content .content-right .user {
+    display: flex;
+    cursor: pointer;
+}
+
+.home-container .header-container .header-content .content-right .user .avatar {
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 2px;
+    background-image: url(https://www.hackthebox.com/storage/avatars/1fb81a0a5698382fcaa0ea2cef40a7b0.png?v=1);
+    background-size: 100% 100%;
+}
+
+.home-container .header-container .header-content .content-right .user .user-name {
+    color: white;
+    margin-left: 15px;
+    margin-top: 12px;
+}
+
+.home-container .header-container .header-content .content-right .user .down {
+    color: #ccc;
+    margin-left: 10px;
+    margin-top: 14px;
+}
+
+.home-container .header-container .header-content .content-right .connect {
+    height: 40px;
+    width: 160px;
+    color: red;
+    background-color: #111927;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+    display: flex;
+}
+
+.home-container .header-container .header-content .content-right .connect .connect-i {
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 12px;
+}
+
+.home-container .header-container .header-content .content-right .connect .text {
+    margin-right: 5px;
+    margin-top: 7px;
+}
+
+.home-container .header-container .header-content .content-right .connect:hover {
+    background-color: #333;
+}
+
+/* Body-container */
+
+.home-container .body-container {
+    /* height: 693px; */
+    height: 100%;
+    display: flex;
+    padding-top: 64px;
+}
+
+/* Nav */
+
+.home-container .body-container .nav-container {
+    top: 0px;
+    padding-top: 64px;
+    height: 100vh;
+    transform: translateX(0%);
+    width: 210px;
+    background-color: #111927;
+    position: fixed;
+    z-index: 1;
+}
+
+.home-container .body-container .nav-container:hover {
+    border-right: 0.5px solid greenyellow;
+}
+
+.home-container .body-container .nav-container .nav-top {
+    width: 99%;
+    margin-top: 5px;
+}
+
+.home-container .body-container .nav-container .nav-top .children {
+    border: 1px solid #141d2b;
+    height: 40px;
+    width: 100%;
+    margin-top: 5px;
+    color: #ccc;
+    cursor: pointer;
+    display: flex;
+}
+
+.home-container .body-container .nav-container .nav-top .children i {
+    margin-top: 14px;
+    margin-left: 20px;
+    margin-right: 10px;
+    color: greenyellow;
+}
+
+.home-container .body-container .nav-container .nav-top .children .text {
+    margin-top: 10px;
+}
+
+.home-container .body-container .nav-container .nav-top .children:hover {
+    background-color: #1a2332;
+}
+
+.home-container .body-container .nav-container .nav-down {
+    width: 99%;
+    margin-top: 100px;
+}
+
+.home-container .body-container .nav-container .nav-down .children {
+    border: 1px solid #141d2b;
+    height: 40px;
+    width: 100%;
+    margin-top: 5px;
+    color: #ccc;
+    cursor: pointer;
+    display: flex;
+}
+
+.home-container .body-container .nav-container .nav-down .children i {
+    margin-top: 14px;
+    margin-left: 20px;
+    margin-right: 10px;
+    color: greenyellow;
+}
+
+.home-container .body-container .nav-container .nav-down .children .text {
+    margin-top: 10px;
+}
+
+.home-container .body-container .nav-container .nav-down .children:hover {
+    background-color: #1a2332;
+}
+
+/* Body-content */
+
+.home-container .body-container .body-content {
+    width: 100%;
+    /* background-color: #141d2b; */
+    margin-left: 210px;
+}
+
+.home-container .body-container .body-content .tag:hover .play-btn {
+    display: block !important;
+}
+
+.home-container .body-container .body-content .text-name:hover {
+    color: greenyellow !important;
+}
+
+.home-container .body-container .body-content .rewarded:hover .submit {
+    color: greenyellow !important;
+}
+
+.home-container .body-container .body-content .head:hover {
+    background-color: #1a2332 !important;
+}
+
+.home-container .body-container .body-content .list-btn:hover {
+    opacity: 0.6 !important;
+}
+
+.home-container .body-container .body-content .search-btn:hover {
+    background-color: #1a2332 !important;
+}
+
+.home-container .body-container .body-content .namee:hover {
+    color: greenyellow !important;
+}
+

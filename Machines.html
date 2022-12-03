@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Machines.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <title>Machines</title>
+</head>
+<body style="margin: 0;">
+    <div class="home-container">
+        <div class="header-container">
+            <div class="header-content">
+                <div class="content-left">
+                    <div class="logo">
+                        <img src="https://app.hackthebox.com/images/logos/logo-htb.svg"/>
+                    </div>
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input placeholder="Search Hack the Box"/>
+                    </div>
+                    <button class="update">Update to vip</button>
+                </div>
+                <div class="content-right">
+                    <i  class="fas fa-shopping-bag shop" title="Swagshop"></i>
+                    <i class="fas fa-bookmark feedback" title="Feddback"></i>
+                    <i class="fas fa-question-circle help" title="Help center"></i>
+                    <div class="user">
+                        <div class="avatar"></div>
+                        <div class="user-name">MinhPham</div>
+                        <i class="fas fa-chevron-down down"></i>
+                    </div>
+                    <div class="connect" title="Connection Settings">
+                        <i class="fas fa-wifi connect-i"></i>
+                        <div class="text">Connect to HTB</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BODY -->
+        <div class="body-container">
+            <!-- Nav -->
+            <div class="nav-container">
+                <div class="nav-top">
+                    <a class="children" href="http://127.0.0.1:5500/Home.html" style="text-decoration: none;">
+                        <i class="fas fa-home-alt"></i>
+                        <div class="text">Home</div>
+                    </a>
+                    <a class="children" href="http://127.0.0.1:5500/Profile.html" style="text-decoration: none;">
+                        <i class="fas fa-user"></i>
+                        <div class="text">My Profile</div>
+                    </a>
+                    <div class="children">
+                        <i class="fas fa-users"></i>
+                        <div class="text">My Team</div>
+                    </div>
+                    <div class="children">
+                        <i class="fa-solid fa-film"></i>
+                        <div class="text">Labs</div>
+                    </div>
+                    <a class="children" href="http://127.0.0.1:5500/Rankings.html" style="text-decoration: none;">
+                        <i class="fa-solid fa-ranking-star"></i>
+                        <div class="text">Rankings</div>
+                    </a>
+                    <div class="children">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                        <div class="text">Battleground</div>
+                    </div>
+                    <div class="children">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="text">Academy</div>
+                    </div>
+                    <div class="children">
+                        <i class="fas fa-suitcase"></i>
+                        <div class="text">Careers</div>
+                    </div>
+                    <div class="children">
+                        <i class="fas fa-building-columns"></i>
+                        <div class="text">Universities</div>
+                    </div>
+                    <div class="children">
+                        <i class="fas fa-message"></i>
+                        <div class="text">Social</div>
+                    </div>
+                </div> 
+                <div class="nav-down">
+                    <div class="children">
+                        <i class="fas fa-laptop"></i>
+                        <div class="text">HTB for Business</div>
+                    </div>
+                    <div class="children">
+                        <i class="fas fa-question-circle"></i>
+                        <div class="text">Customer Support</div>
+                    </div>
+                    <div class="children">
+                        <i class="fas fa-tag"></i>
+                        <div class="text">v 3.18.0</div>
+                    </div>
+                </div>
+    
+            </div>
+            <!-- Body-content -->
+            <div class="body-content">
+                <div class="" style="width: 100%; height: 230px; background-color: #111927; display: flex;">
+                    <div style="display: flex; height: 100%; width: 33.33%; border-right: 1px solid #18212f; border-left: 1px solid #18212f;">
+                        <div style="margin-top: 55px; margin-left: 40px;">
+                            <div style="height: 100px; width: 100px; border-radius: 50%; background-image: url(https://www.hackthebox.com/storage/avatars/caac8772de14a769c0bfe95756bceebe_thumb.png); background-size: cover; cursor: pointer;"></div>
+                            <div style="height: 32px; width: 32px; border-radius: 50%; background-color: #1a2332; margin-top: -15px; margin-left: 33px;
+                                 background-image: url(https://app.hackthebox.com/images/icons/ic-machines/ic-linux.svg); background-size: 70%; background-position: center; background-repeat: no-repeat;"></div>
+                        </div>
+                        <div style="margin-top: 60px; margin-left: 40px;">
+                            <div style="color: #ccc; font-size: 11px; margin-bottom: 5px;">NEW RELEASE</div>
+                            <div style="color: greenyellow; font-size: 11px; font-weight: 500;">1D 4H 57M 20S</div>
+                            <div class="text-name" style="color: white; font-size: 22px; font-weight: 700; cursor: pointer;">Pollution</div>
+                            <div style="color: #ccc; font-size: 11px; cursor: pointer; margin-top: 5px;">HARD</div>
+                        </div>
+                    </div>
+                    <div class="tag" style="display: flex; height: 100%; width: 33.33%; border-right: 1px solid #18212f; border-left: 1px solid #18212f;">
+                        <div style="margin-top: 55px; margin-left: 40px;">
+                            <div style="height: 100px; width: 100px; border-radius: 50%; background-image: url(https://www.hackthebox.com/storage/avatars/8bd21b71341bdc7278443105bb09d033.png); background-size: cover; cursor: pointer;"></div>
+                            <div style="height: 32px; width: 32px; border-radius: 50%; background-color: #1a2332; margin-top: -15px; margin-left: 33px;
+                                 background-image: url(https://app.hackthebox.com/images/icons/ic-machines/ic-linux.svg); background-size: 70%; background-position: center; background-repeat: no-repeat;"></div>
+                        </div>
+                        <div style="margin-top: 55px; margin-left: 40px;">
+                            <div style="color: #ccc; font-size: 11px; margin-bottom: 5px;">RETIRING MACHINE</div>
+                            <div style="color: gold; font-size: 11px; font-weight: 500;">1D 4H 51M 1S</div>
+                            <div class="text-name" style="color: white; font-size: 22px; font-weight: 700; cursor: pointer;">Carpediem</div>
+                            <div style="color: #ccc; font-size: 11px; cursor: pointer; margin-top: 5px;">HARD</div>
+                            <div class="play-btn" style="width: 150px; height: 40px; background-color: greenyellow; border-radius: 20px; margin-top: 10px; padding-top: 8px; display: none;">
+                                <i class="fas fa-power-off" style="margin-left: 10px;"></i>
+                                <span>PLAY MACHINE</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style=" height: 100%; width: 33.33%; border-right: 1px solid #18212f; border-left: 1px solid #18212f;">
+                        <div class="rewarded" style="height: 50%; width: 100%; border-bottom: 1px solid #18212f; display: flex; padding-left: 30px; padding-top: 40px;">
+                            <div style="height: 32px; width: 32px; background-image: url(https://app.hackthebox.com/images/icons/ic-prolabs/ic-navbar-labs.svg); background-size: cover; margin-top: 5px; cursor: pointer;"></div>
+                            <div style="margin-left: 20px; cursor: pointer;">
+                                <div style="color: greenyellow; font-size: 12px;">GET REWARDED</div>
+                                <div class="submit" style="color: white; font-size: 15px; font-weight: 500;">Submit a Machine</div>
+                            </div>
+                        </div>
+                        <div class="rewarded" style="height: 50%; width: 100%; border-top: 1px solid #18212f; display: flex; padding-left: 30px; padding-top: 35px;">
+                            <div style="height: 32px; width: 32px; background-image: url(https://app.hackthebox.com/images/icons/ic-machines/ic-vipbadge.svg); background-size: cover; margin-top: 5px; cursor: pointer;"></div>
+                            <div style="margin-left: 20px; cursor: pointer;">
+                                <div style="color: greenyellow; font-size: 12px;">24H/MO PWNBOX + RETIRED CONTENT</div>
+                                <div class="submit" style="color: white; font-size: 15px; font-weight: 500;">Update to VIP</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="height: 700px; width: 100%; background-color: #141d2b;">
+                    <div style="height: 62px; width: 100%; border-bottom: 2px solid #18212f; display: flex; justify-content: space-between;">
+                        <div style="display: flex;">
+                            <div style="display: flex; min-width: 100px; padding: 15px; border-bottom: 3px solid greenyellow; margin-left: 15px; padding-top: 15px; cursor: pointer;">
+                                <span style="color: white; font-size: 13px; font-weight: 500;">ACTIVE MACHINES</span>
+                                <i class="fas fa-circle-info" style="color: #ccc; margin-left: 10px; margin-top: 4px;"></i>
+                            </div>
+                            <div class="head" style="display: flex; min-width: 100px; padding: 15px; padding-top: 15px; cursor: pointer;">
+                                <span style="color: #CCC; font-size: 13px; font-weight: 500;">RETIRED MACHINES</span>
+                                <i class="fas fa-circle-info" style="color: #ccc; margin-left: 10px; margin-top: 4px;"></i>
+                            </div>
+                            <div class="head" style="display: flex; min-width: 100px; padding: 15px; padding-top: 15px; cursor: pointer;">
+                                <span style="color: #CCC; font-size: 13px; font-weight: 500;">MACHINES TO-DO LIST</span>
+                            </div>
+                            <div class="head" style="display: flex; min-width: 100px; padding: 15px; padding-top: 15px; cursor: pointer;">
+                                <span style="color: #CCC; font-size: 13px; font-weight: 500;">SCHEDULED BOX RELEASES</span>
+                            </div>
+                        </div>
+                        <div style="display: flex; margin-top: 8px; margin-right: 20px; cursor: pointer;">
+                            <div class="list-btn" style="height: 44px; width: 44px; background-color: #111927; background-image: url(https://app.hackthebox.com/images/icons/ic-layout/ic-comfortable-layout-inactive.svg); background-position: center; background-size: 50%; background-repeat: no-repeat; border-bottom-left-radius: 5px; border-top-left-radius: 5px;" title="Comfortable Layout"></div>
+                            <div class="list-btn" style="height: 44px; width: 44px; background-color: #27372d; background-image: url(https://app.hackthebox.com/images/icons/ic-layout/ic-compact-layout-active.svg); background-position: center; background-size: 50%; background-repeat: no-repeat; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" title="Compact Layout"></div>
+                        </div>
+                    </div>
+                    <div style="display: flex; height: 68px; width: 100%; margin-top: 20px; border-bottom: 1px solid #1a2332; justify-content: space-between;">
+                        <div style="margin-top: 10px; margin-left: 40px;">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #ccc; margin-right: 20px;"></i>
+                            <input placeholder="Search active machines ..." style="background-color: transparent; border: none; width: 570px;"/>
+                        </div>
+                        <div style="display: flex;">
+                            <div class="search-btn" style="height: 44px; width: 140px; border: 1px solid #111927; background-color:#111927; border-radius: 5px; margin-left: 15px; margin-right: 25px; color: #ccc; font-size: 12px; text-align: center; padding-top: 10px; cursor: pointer;">
+                                <span style="color: #ccc;">STATUS</span>
+                                <span style="color: greenyellow;"> - BOTH</span>
+                            </div>
+                            <div class="search-btn" style="height: 44px; width: 105px; border: 1px solid #111927; border-radius: 5px; margin-left: 15px; margin-right: 25px; color: #ccc; font-size: 12px; text-align: center; padding-top: 10px; cursor: pointer;">SORT BY</div>
+                            <div class="search-btn" style="height: 44px; width: 105px; border: 1px solid #111927; border-radius: 5px; margin-left: 15px; margin-right: 25px; color: #ccc; font-size: 12px; text-align: center; padding-top: 10px; cursor: pointer;">DIFFICULTY</div>
+                            <div class="search-btn" style="height: 44px; width: 105px; border: 1px solid #111927; border-radius: 5px; margin-left: 15px; margin-right: 25px; color: #ccc; font-size: 12px; text-align: center; padding-top: 10px; cursor: pointer;">OS</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; height: 60px; width: 100%; margin-top: 20px; border-bottom: 1px solid #1a2332; gap: 160px; padding-top: 10px;">
+                        <div style="color: #CCC; font-size: 13px; margin-left: 40px;">MACHINE</div>
+                        <div style="color: #CCC; font-size: 13px;">USER RATING</div>
+                        <div style="color: #CCC; font-size: 13px;">RATING</div>
+                        <div style="color: #CCC; font-size: 13px;">USER OWNS</div>
+                        <div style="color: #CCC; font-size: 13px;">SYSTEM OWNS</div>
+                    </div>
+                    <div style="display: flex; height: 70px; width: 100%; margin-top: 20px; border-bottom: 1px solid #1a2332; gap: 160px; padding-top: 4px; cursor: pointer;">
+                        <div style="display: flex;">
+                            <div style="display: flex; margin-left: 40px; margin-top: 0px;">
+                                <div style="height: 42px; width: 42px; border-radius: 50%; background-image: url(https://www.hackthebox.com/storage/avatars/3adcfd6093f8ddb4dffe8422da6377c8.png); background-size: cover;"></div>
+                                <div style="height: 20px; width: 20px; border-radius: 50%; background-color: #1a2332; margin-top: 24px; margin-left: -16px;
+                                 background-image: url(https://app.hackthebox.com/images/icons/ic-machines/ic-linux.svg); background-size: 90%; background-position: center; background-repeat: no-repeat;" title="Linux">
+                            </div>
+                            <div style=" margin-left: 20px;">
+                                <div class="namee" style="color: white;">Precious</div>
+                                <div style="color: #ccc; font-size: 10px;">EASY</div>
+                            </div>
+                            </div>
+                        </div>
+                        <canvas id="myChart" style="max-width:150px; margin-left: -80px; margin-top: -6px;"></canvas>
+                        <div style="display: flex; margin-left: -65px;">
+                            <div style="height: 34px; width: 34px; border-radius: 50%; background-color: #1a2332; 
+                                background-image: url(https://app.hackthebox.com/images/icons/ic-topnavbar/ic-star-outline.svg); background-position: center; background-repeat: no-repeat; background-size: 60%;"></div>
+                            <div style="color: #ccc; font-size: 14px; margin-left: 10px; margin-top: 7px;">4.7</div>
+                        </div>
+                        <div style="display: flex; margin-left: -16px;">
+                            <div style="height: 34px; width: 34px; border-radius: 50%; background-color: #1a2332; 
+                                background-image: url(https://app.hackthebox.com/images/icons/ic-machines/ic-user.svg); background-position: center; background-repeat: no-repeat; background-size: 60%;"></div>
+                            <div style="color: #ccc; font-size: 14px; margin-left: 10px; margin-top: 7px;">1583</div>
+                        </div>
+                        <div style="display: flex; margin-left: 0px;">
+                            <div style="height: 34px; width: 34px; border-radius: 50%; background-color: #1a2332; 
+                                background-image: url(https://app.hackthebox.com/images/icons/ic-machines/ic-root.svg); background-position: center; background-repeat: no-repeat; background-size: 60%;"></div>
+                            <div style="color: #ccc; font-size: 14px; margin-left: 10px; margin-top: 7px;">1448</div>
+                        </div>
+                        <i class="fas fa-angle-right" style="color: #ccc; margin-top: 12px; margin-left: 30px;"></i>
+                    </div>
+                    <div style="display: flex; height: 70px; width: 100%; margin-top: 20px; border-bottom: 1px solid #1a2332; gap: 160px; padding-top: 4px; cursor: pointer;">
+                        <div style="display: flex;">
+                            <div style="display: flex; margin-left: 40px; margin-top: 0px;">
+                                <div style="height: 42px; width: 42px; border-radius: 50%; background-image: url(https://www.hackthebox.com/storage/avatars/5838788a40abc4207065d9d005881238.png); background-size: cover;"></div>
+                                <div style="height: 20px; width: 20px; border-radius: 50%; background-color: #1a2332; margin-top: 24px; margin-left: -16px;
+                                 background-image: url(https://app.hackthebox.com/images/icons/ic-machines/ic-linux.svg); background-size: 90%; background-position: center; background-repeat: no-repeat;" title="Linux">
+                            </div>
+                            <div style=" margin-left: 20px;">
+                                <div class="namee" style="color: white;">Derailed</div>
+                                <div style="color: #ccc; font-size: 10px;">INSANE</div>
+                            </div>
+                            </div>
+                        </div>
+                        <canvas id="myChart2" style="max-width:150px; margin-left: -80px; margin-top: -6px;"></canvas>
+                        <div style="display: flex; margin-left: -65px;">
+                            <div style="height: 34px; width: 34px; border-radius: 50%; background-color: #1a2332; 
+                                background-image: url(https://app.hackthebox.com/images/icons/ic-topnavbar/ic-star-outline.svg); background-position: center; background-repeat: no-repeat; background-size: 60%;"></div>
+                            <div style="color: #ccc; font-size: 14px; margin-left: 10px; margin-top: 7px;">4.6</div>
+                        </div>
+                        <div style="display: flex; margin-left: -16px;">
+                            <div style="height: 34px; width: 34px; border-radius: 50%; background-color: #1a2332; 
+                                background-image: url(https://app.hackthebox.com/images/icons/ic-machines/ic-user.svg); background-position: center; background-repeat: no-repeat; background-size: 60%;"></div>
+                            <div style="color: #ccc; font-size: 14px; margin-left: 10px; margin-top: 7px;">119</div>
+                        </div>
+                        <div style="display: flex; margin-left: 8px;">
+                            <div style="height: 34px; width: 34px; border-radius: 50%; background-color: #1a2332; 
+                                background-image: url(https://app.hackthebox.com/images/icons/ic-machines/ic-root.svg); background-position: center; background-repeat: no-repeat; background-size: 60%;"></div>
+                            <div style="color: #ccc; font-size: 14px; margin-left: 10px; margin-top: 7px;">102</div>
+                        </div>
+                        <i class="fas fa-angle-right" style="color: #ccc; margin-top: 12px; margin-left: 36px;"></i>
+                    </div>
+                    <div style="display: flex; height: 70px; width: 100%; margin-top: 20px; border-bottom: 1px solid #1a2332; gap: 160px; padding-top: 4px; cursor: pointer;">
+                        <div style="display: flex;">
+                            <div style="display: flex; margin-left: 40px; margin-top: 0px;">
+                                <div style="height: 42px; width: 42px; border-radius: 50%; background-image: url(https://www.hackthebox.com/storage/avatars/1ba902c66c65486f812c658d504e4826.png); background-size: cover;"></div>
+                                <div style="height: 20px; width: 20px; border-radius: 50%; background-color: #1a2332; margin-top: 24px; margin-left: -16px;
+                                 background-image: url(https://app.hackthebox.com/images/icons/ic-machines/ic-linux.svg); background-size: 90%; background-position: center; background-repeat: no-repeat;" title="Linux">
+                            </div>
+                            <div style=" margin-left: 20px;">
+                                <div class="namee" style="color: white;">Forgot</div>
+                                <div style="color: #ccc; font-size: 10px;">MEDIUM</div>
+                            </div>
+                            </div>
+                        </div>
+                        <canvas id="myChart3" style="max-width:150px; margin-left: -66px; margin-top: -6px;"></canvas>
+                        <div style="display: flex; margin-left: -65px;">
+                            <div style="height: 34px; width: 34px; border-radius: 50%; background-color: #1a2332; 
+                                background-image: url(https://app.hackthebox.com/images/icons/ic-topnavbar/ic-star-outline.svg); background-position: center; background-repeat: no-repeat; background-size: 60%;"></div>
+                            <div style="color: #ccc; font-size: 14px; margin-left: 10px; margin-top: 7px;">2.3</div>
+                        </div>
+                        <div style="display: flex; margin-left: -16px;">
+                            <div style="height: 34px; width: 34px; border-radius: 50%; background-color: #1a2332; 
+                                background-image: url(https://app.hackthebox.com/images/icons/ic-machines/ic-user.svg); background-position: center; background-repeat: no-repeat; background-size: 60%;"></div>
+                            <div style="color: #ccc; font-size: 14px; margin-left: 10px; margin-top: 7px;">477</div>
+                        </div>
+                        <div style="display: flex; margin-left: 8px;">
+                            <div style="height: 34px; width: 34px; border-radius: 50%; background-color: #1a2332; 
+                                background-image: url(https://app.hackthebox.com/images/icons/ic-machines/ic-root.svg); background-position: center; background-repeat: no-repeat; background-size: 60%;"></div>
+                            <div style="color: #ccc; font-size: 14px; margin-left: 10px; margin-top: 7px;">447</div>
+                        </div>
+                        <i class="fas fa-angle-right" style="color: #ccc; margin-top: 12px; margin-left: 36px;"></i>
+                    </div>
+                    <div style="display: flex; height: 70px; width: 100%; margin-top: 20px; border-bottom: 1px solid #1a2332; gap: 160px; padding-top: 4px; cursor: pointer;">
+                        <div style="display: flex;">
+                            <div style="display: flex; margin-left: 40px; margin-top: 0px;">
+                                <div style="height: 42px; width: 42px; border-radius: 50%; background-image: url(https://www.hackthebox.com/storage/avatars/a7af9035e5089332dfbfeb328d663f3e.png); background-size: cover;"></div>
+                                <div style="height: 20px; width: 20px; border-radius: 50%; background-color: #1a2332; margin-top: 24px; margin-left: -16px;
+                                 background-image: url(https://app.hackthebox.com/images/icons/ic-machines/ic-windows.svg); background-size: 90%; background-position: center; background-repeat: no-repeat;" title="Windows">
+                            </div>
+                            <div style=" margin-left: 20px;">
+                                <div class="namee" style="color: white;">Flight</div>
+                                <div style="color: #ccc; font-size: 10px;">HARD</div>
+                            </div>
+                            </div>
+                        </div>
+                        <canvas id="myChart4" style="max-width:150px; margin-left: -58px; margin-top: -6px;"></canvas>
+                        <div style="display: flex; margin-left: -63px;">
+                            <div style="height: 34px; width: 34px; border-radius: 50%; background-color: #1a2332; 
+                                background-image: url(https://app.hackthebox.com/images/icons/ic-topnavbar/ic-star-outline.svg); background-position: center; background-repeat: no-repeat; background-size: 60%;"></div>
+                            <div style="color: #ccc; font-size: 14px; margin-left: 10px; margin-top: 7px;">5</div>
+                        </div>
+                        <div style="display: flex; margin-left: -6px;">
+                            <div style="height: 34px; width: 34px; border-radius: 50%; background-color: #1a2332; 
+                                background-image: url(https://app.hackthebox.com/images/icons/ic-machines/ic-user.svg); background-position: center; background-repeat: no-repeat; background-size: 60%;"></div>
+                            <div style="color: #ccc; font-size: 14px; margin-left: 10px; margin-top: 7px;">531</div>
+                        </div>
+                        <div style="display: flex; margin-left: 8px;">
+                            <div style="height: 34px; width: 34px; border-radius: 50%; background-color: #1a2332; 
+                                background-image: url(https://app.hackthebox.com/images/icons/ic-machines/ic-root.svg); background-position: center; background-repeat: no-repeat; background-size: 60%;"></div>
+                            <div style="color: #ccc; font-size: 14px; margin-left: 10px; margin-top: 7px;">422</div>
+                        </div>
+                        <i class="fas fa-angle-right" style="color: #ccc; margin-top: 12px; margin-left: 36px;"></i>
+                    </div>
+                    <div style="display: flex; height: 70px; width: 100%; margin-top: 20px; border-bottom: 1px solid #1a2332; gap: 160px; padding-top: 4px; cursor: pointer;">
+                        <div style="display: flex;">
+                            <div style="display: flex; margin-left: 40px; margin-top: 0px;">
+                                <div style="height: 42px; width: 42px; border-radius: 50%; background-image: url(https://www.hackthebox.com/storage/avatars/b08c77f48a671ddc1947d8570b75f6e6.png); background-size: cover;"></div>
+                                <div style="height: 20px; width: 20px; border-radius: 50%; background-color: #1a2332; margin-top: 24px; margin-left: -16px;
+                                 background-image: url(https://app.hackthebox.com/images/icons/ic-machines/ic-windows.svg); background-size: 90%; background-position: center; background-repeat: no-repeat;" title="Windows">
+                            </div>
+                            <div style=" margin-left: 20px;">
+                                <div class="namee" style="color: white;">MetaTwo</div>
+                                <div style="color: #ccc; font-size: 10px;">EASY</div>
+                            </div>
+                            </div>
+                        </div>
+                        <canvas id="myChart5" style="max-width:150px; margin-left: -80px; margin-top: -6px;"></canvas>
+                        <div style="display: flex; margin-left: -65px;">
+                            <div style="height: 34px; width: 34px; border-radius: 50%; background-color: #1a2332; 
+                                background-image: url(https://app.hackthebox.com/images/icons/ic-topnavbar/ic-star-outline.svg); background-position: center; background-repeat: no-repeat; background-size: 60%;"></div>
+                            <div style="color: #ccc; font-size: 14px; margin-left: 10px; margin-top: 7px;">4.7</div>
+                        </div>
+                        <div style="display: flex; margin-left: -16px;">
+                            <div style="height: 34px; width: 34px; border-radius: 50%; background-color: #1a2332; 
+                                background-image: url(https://app.hackthebox.com/images/icons/ic-machines/ic-user.svg); background-position: center; background-repeat: no-repeat; background-size: 60%;"></div>
+                            <div style="color: #ccc; font-size: 14px; margin-left: 10px; margin-top: 7px;">3463</div>
+                        </div>
+                        <div style="display: flex; margin-left: 0px;">
+                            <div style="height: 34px; width: 34px; border-radius: 50%; background-color: #1a2332; 
+                                background-image: url(https://app.hackthebox.com/images/icons/ic-machines/ic-root.svg); background-position: center; background-repeat: no-repeat; background-size: 60%;"></div>
+                            <div style="color: #ccc; font-size: 14px; margin-left: 10px; margin-top: 7px;">3296</div>
+                        </div>
+                        <i class="fas fa-angle-right" style="color: #ccc; margin-top: 12px; margin-left: 30px;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var xValues = [,,,,,,,,,,];
+        var barColors = ["green", "green", "green","orange", "orange", "orange", "orange", "red", "red", "red"];
+        
+        new Chart("myChart", {
+          type: "bar",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: [20, 49, 44, 24, 15, 20,30, 35, 25, 40]
+            }]
+          },
+          options: {
+            legend: {display: false},
+          }
+        });
+        new Chart("myChart2", {
+          type: "bar",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: [30, 29, 44, 44, 25, 10,20, 45, 35, 30]
+            }]
+          },
+          options: {
+            legend: {display: false},
+          }
+        });
+        new Chart("myChart3", {
+          type: "bar",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: [40, 19, 24, 14, 35, 40,30, 15, 20, 40]
+            }]
+          },
+          options: {
+            legend: {display: false},
+          }
+        });
+        new Chart("myChart4", {
+          type: "bar",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: [40, 29, 34, 44, 25, 10,10, 25, 35, 40]
+            }]
+          },
+          options: {
+            legend: {display: false},
+          }
+        });
+        new Chart("myChart5", {
+          type: "bar",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: [50, 19, 14, 24, 25, 10,40, 35, 25, 10]
+            }]
+          },
+          options: {
+            legend: {display: false},
+          }
+        });
+        </script>
+</body>
+</html>

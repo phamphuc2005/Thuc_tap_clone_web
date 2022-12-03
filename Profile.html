@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Profile.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>Profile</title>
+</head>
+<body style="margin: 0;">
+    <div class="home-container">
+        <div class="header-container">
+            <div class="header-content">
+                <div class="content-left">
+                    <div class="logo">
+                        <img src="https://app.hackthebox.com/images/logos/logo-htb.svg"/>
+                    </div>
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input placeholder="Search Hack the Box"/>
+                    </div>
+                    <button class="update">Update to vip</button>
+                </div>
+                <div class="content-right">
+                    <i  class="fas fa-shopping-bag shop" title="Swagshop"></i>
+                    <i class="fas fa-bookmark feedback" title="Feddback"></i>
+                    <i class="fas fa-question-circle help" title="Help center"></i>
+                    <div class="user">
+                        <div class="avatar"></div>
+                        <div class="user-name">MinhPham</div>
+                        <i class="fas fa-chevron-down down"></i>
+                    </div>
+                    <div class="connect" title="Connection Settings">
+                        <i class="fas fa-wifi connect-i"></i>
+                        <div class="text">Connect to HTB</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BODY -->
+        <div class="body-container">
+            <!-- Nav -->
+            <div class="nav-container">
+                <div class="nav-top">
+                    <a class="children" href="http://127.0.0.1:5500/Home.html" style="text-decoration: none;">
+                        <i class="fas fa-home-alt"></i>
+                        <div class="text">Home</div>
+                    </a>
+                    <a class="children" href="http://127.0.0.1:5500/Profile.html" style="background-color: #1a2332; text-decoration: none;">
+                        <i class="fas fa-user"></i>
+                        <div class="text" style="color: white; font-weight: 500;">My Profile</div>
+                    </a>
+                    <div class="children">
+                        <i class="fas fa-users"></i>
+                        <div class="text">My Team</div>
+                    </div>
+                    <div class="children">
+                        <i class="fa-solid fa-film"></i>
+                        <div class="text">Labs</div>
+                    </div>
+                    <a class="children" href="http://127.0.0.1:5500/Rankings.html" style="text-decoration: none;">
+                        <i class="fa-solid fa-ranking-star"></i>
+                        <div class="text">Rankings</div>
+                    </a>
+                    <div class="children">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                        <div class="text">Battleground</div>
+                    </div>
+                    <div class="children">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="text">Academy</div>
+                    </div>
+                    <div class="children">
+                        <i class="fas fa-suitcase"></i>
+                        <div class="text">Careers</div>
+                    </div>
+                    <div class="children">
+                        <i class="fas fa-building-columns"></i>
+                        <div class="text">Universities</div>
+                    </div>
+                    <div class="children">
+                        <i class="fas fa-message"></i>
+                        <div class="text">Social</div>
+                    </div>
+                </div> 
+                <div class="nav-down">
+                    <div class="children">
+                        <i class="fas fa-laptop"></i>
+                        <div class="text">HTB for Business</div>
+                    </div>
+                    <div class="children">
+                        <i class="fas fa-question-circle"></i>
+                        <div class="text">Customer Support</div>
+                    </div>
+                    <div class="children">
+                        <i class="fas fa-tag"></i>
+                        <div class="text">v 3.18.0</div>
+                    </div>
+                </div>
+    
+            </div>
+            <!-- Body-content -->
+            <div class="body-content">
+                <div class="body-header" style="display: flex; justify-content: space-between;">
+                    <div class="header-left" style="display: flex; margin-left: 40px; margin-top: 21px;">
+                        <div style="width: 64px; height: 64px; border-radius: 50%; background-image: url(https://www.hackthebox.com/storage/avatars/1fb81a0a5698382fcaa0ea2cef40a7b0.png?v=1); background-size: cover;"></div>
+                        <div style="margin-left: 15px; margin-top: 6px;">
+                            <div class="top" style="cursor: pointer; margin-bottom: 5px;">
+                                <span class="name" style="color: white; font-weight: 600; font-size: 20px;">MinhPham</span>
+                                <span style="color: #ccc; font-size: 12px; font-weight: 400;">#1296400</span>
+                            </div>
+                            <div style="display: flex; gap: 10px;">
+                                <div style="display: flex;">
+                                    <img src="https://app.hackthebox.com/images/icons/ic-other/ic-points.svg" style="margin-right: 6px; width: 18px;" title="Final Score"></img>
+                                    <div style="color: white; font-size: 12px; margin-top: -2px;">0</div>
+                                </div>
+                                <div style="display: flex;">
+                                    <img src="https://app.hackthebox.com/images/icons/ic-machines/ic-userflag.svg" style="margin-right: 6px; width: 18px;" title="Owned Users"></img>
+                                    <div style="color: white; font-size: 12px; margin-top: -2px;">0</div>
+                                </div>
+                                <div style="display: flex;">
+                                    <img src="https://app.hackthebox.com/images/icons/ic-machines/ic-rootflag.svg" style="margin-right: 6px; width: 18px;" title="Owned Systems"></img>
+                                    <div style="color: white; font-size: 12px; margin-top: -2px;">0</div>
+                                </div>
+                                <div style="display: flex;">
+                                    <img src="https://app.hackthebox.com/images/icons/ic-profile/ic-respect.svg" style="margin-right: 6px; width: 18px;" title="Respect"></img>
+                                    <div style="color: white; font-size: 12px; margin-top: -2px;">0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-right" style="display: flex; gap: 40px; margin-top: 24px; margin-right: 50px;">
+                        <span>
+                            <div style="color: #ccc; font-weight: 400; font-size: 11px;">RANK</div>
+                            <div style="color: white; font-weight: 500; font-size: 16px;">Noob</div>
+                        </span>
+                        <span>
+                            <div style="color: #ccc; font-weight: 400; font-size: 11px;">PLAN TYPE</div>
+                            <div style="color: white; font-weight: 500; font-size: 16px;">FREE</div>
+                            <div class="go-vip" style="color: greenyellow; font-weight: 500; font-size: 11px; margin-top: 5px; cursor: pointer;">GO VIP</div>
+                        </span>
+                    </div>
+                </div>
+                <div class="body-main">
+                    <div>
+                        <div style="height: 50px; border-bottom: 1px solid #1b2533; display: flex; margin-left: 20px;">
+                            <div class="head" style="color: white; font-weight: 500; font-size: 12px; width: 100px; height: 100%; border-bottom: 2px solid greenyellow; padding: 12px 15px; text-align: center; cursor: pointer;">PROFILE</div>
+                            <div class="head" style="color: #ccc; font-weight: 500; font-size: 12px; min-width: 100px; height: 100%; padding: 12px 15px; text-align: center; cursor: pointer;">PROFILE SETTINGS</div>
+                            <div class="head" style="color: #ccc; font-weight: 500; font-size: 12px; min-width: 100px; height: 100%; padding: 12px 15px; text-align: center; cursor: pointer;">BILLING & PLANS</div>
+                            <div class="head" style="color: #ccc; font-weight: 500; font-size: 12px; min-width: 100px; height: 100%; padding: 12px 15px; text-align: center; cursor: pointer;">CREATE TEAM</div>
+                        </div>
+                        <div style="height: 50px; border-bottom: 1px solid #1b2533; display: flex; margin-left: 20px;">
+                            <div class="head" style="color: white; font-weight: 500; font-size: 12px; width: 100px; height: 100%; padding: 12px 15px; text-align: center; cursor: pointer;">OVERVIEW</div>
+                            <div class="head" style="color: #ccc; font-weight: 500; font-size: 12px; min-width: 100px; height: 100%; padding: 12px 15px; text-align: center; cursor: pointer;">ACTIVITY</div>
+                            <div class="head" style="color: #ccc; font-weight: 500; font-size: 12px; min-width: 100px; height: 100%; padding: 12px 15px; text-align: center; cursor: pointer;">BADGES</div>
+                            <div class="head" style="color: #ccc; font-weight: 500; font-size: 12px; min-width: 100px; height: 100%; padding: 12px 15px; text-align: center; cursor: pointer;">CERTIFICATES</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; margin-top: 40px;">
+                        <div style="height: 150px; width: 30%; display: flex; background-image: url(./fonts/tải\ xuống.png); border: 1px solid #111927; margin-left: 40px;">
+                            <div style="height: 100px; width: 100px; background-image: url(https://app.hackthebox.com/images/badges/badgesbg.svg); margin-top: 25px; margin-left: 60px;">
+                                <img src="https://app.hackthebox.com/images/badges/badge-noob.svg" style="height: 40px; width: 40px; margin-left: 30px; margin-top: 29px;"/>
+                            </div>
+                            <div style="color: white; margin-top: 60px; margin-left: 40px;">Noob</div>
+                        </div>
+                        <div style="height: 150px; width: 30%; margin-left: 15px;">
+                            <div style="display: flex; margin-top: 30px; margin-bottom: 30px;">
+                                <div style="color: greenyellow; margin-right: 5px;">0%</div>
+                                <div style="color: white;">towardsScript Kiddie</div>
+                            </div>
+                            <div style="width: 100%; height: 20px; background-color: #111927; border-radius: 10px;"></div>
+                        </div>
+                        <div style="height: 150px; width: 30%; margin-left: 30px;">
+                            <div style="display: flex; margin-top: 30px; margin-bottom: 30px;">
+                                <div style="color: greenyellow; margin-right: 5px;">0%</div>
+                                <div style="color: white;">of Hack The Box Pwned</div>
+                            </div>
+                            <div style="width: 100%; height: 20px; background-color: #111927; border-radius: 10px; color: greenyellow; padding: 0px 5px ;">0
+                                <div style="border: 1px solid greenyellow; width: 3px; height: 30px; margin-left: 60px; margin-top: -25px;"></div>
+                                <div style="margin-top: -10px; margin-bottom: -10px;">
+                                    <i class="fas fa-caret-up" style="font-size: 10px; margin-left: 58px;"></i>
+                                </div>
+                                <div style="font-size: 12px; margin-left: 30px;">Script Kiddie</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; height: 150px; gap: 15px; margin-top: 40px;">
+                        <div style="width: 310px; height: 150px; background-color: #1a2332; display: flex; margin-left: 40px; border-radius: 6px;">
+                            <div style="height: 95px; width: 80px; background-image: url(https://app.hackthebox.com/images/icons/ic-icons-kickass/ic-ranks-big2.svg); background-size: cover; margin-top: 20px; margin-left: 30px;"></div>
+                            <div style="margin-top: 40px; margin-left: 30px;">
+                                <div style="color: white; font-size: 26px; font-weight: 600;">#0</div>
+                                <div style="color: #ccc; font-size: 11px; margin-top: 20px;">GLOBAL RANKING</div>
+                            </div>
+                        </div>
+                        <div style="width: 210px; height: 150px; background-color: #1a2332; text-align: center;">
+                            <img src="https://app.hackthebox.com/images/icons/ic-other/ic-points.svg" style="margin-top: 30px;"/>
+                            <div style="color: white; font-size: 26px; font-weight: 600; margin-top: 5px;">0</div>
+                            <div style="color: #ccc; font-size: 11px;">FINAL SCORE</div>
+                        </div>
+                        <div style="width: 210px; height: 150px; background-color: #1a2332; text-align: center;">
+                            <img src="https://app.hackthebox.com/images/icons/ic-machines/ic-userflag.svg" style="margin-top: 30px;"/>
+                            <div style="color: white; font-size: 26px; font-weight: 600; margin-top: 5px;">0</div>
+                            <div style="color: #ccc; font-size: 11px;">USER OWNS</div>
+                        </div>
+                        <div style="width: 210px; height: 150px; background-color: #1a2332; text-align: center;">
+                            <img src="https://app.hackthebox.com/images/icons/ic-machines/ic-rootflag.svg" style="margin-top: 30px;"/>
+                            <div style="color: white; font-size: 26px; font-weight: 600; margin-top: 5px;">0</div>
+                            <div style="color: #ccc; font-size: 11px;">SYSTEM OWNS</div>
+                        </div>
+                        <div style="width: 210px; height: 150px; background-color: #1a2332; text-align: center;">
+                            <img src="https://app.hackthebox.com/images/icons/ic-profile/ic-respect.svg" style="margin-top: 30px;"/>
+                            <div style="color: white; font-size: 26px; font-weight: 600; margin-top: 5px;">0</div>
+                            <div style="color: #ccc; font-size: 11px;">RESPECT</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; height: 46px; width: 1190px; border: 1px solid #1a2332; margin-top: 30px; margin-left: 40px;">
+                        <div style="border-right: 1px solid #1a2332; width: 90px; color: #ccc; text-align: center; padding: 10px; font-size: 12px;">1W</div>
+                        <div style="border-right: 1px solid #1a2332; width: 90px; color: #ccc; text-align: center; padding: 10px; font-size: 12px;">1M</div>
+                        <div style="border-right: 1px solid #1a2332; width: 90px; color: #ccc; text-align: center; padding: 10px; font-size: 12px;">3M</div>
+                        <div style="border-right: 1px solid #1a2332; width: 90px; color: #ccc; text-align: center; padding: 10px; font-size: 12px;">6M</div>
+                        <div style="border-right: 1px solid #1a2332; width: 90px; color: white; text-align: center; padding: 10px; font-size: 12px; border-bottom: 3px solid white;">1Y</div>
+                    </div>
+                    <div style="display: flex; margin-top: 30px; margin-left: 40px;">
+                        <canvas id="myChart" style="width:100%;max-width:1000px; height: 350px;"></canvas>
+                        <div style="margin-left: 50px; margin-top: 80px;">
+                            <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                                <div style="height: 8px; width: 8px; background-color: #ffaf00; border-radius: 50%; margin-top: 6px;"></div>
+                                <div class="c1" style="color: #ccc; font-size: 12px; cursor: pointer; " >User Owns</div>
+                            </div>
+                            <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                                <div style="height: 8px; width: 8px; background-color: #0086ff; border-radius: 50%; margin-top: 6px;"></div>
+                                <div class="c2" style="color: #ccc; font-size: 12px; cursor: pointer;">System Owns</div>
+                            </div>
+                            <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                                <div style="height: 8px; width: 8px; background-color: #9fef00; border-radius: 50%; margin-top: 6px;"></div>
+                                <div class="c3" style="color: #ccc; font-size: 12px; cursor: pointer;">Challenge Owns</div>
+                            </div>
+                            <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                                <div style="height: 8px; width: 8px; background-color: #ff2548; border-radius: 50%; margin-top: 6px;"></div>
+                                <div class="c4" style="color: #ccc; font-size: 12px; cursor: pointer;">First Bloods</div>
+                            </div>
+                            <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                                <div style="height: 8px; width: 8px; background-color: #986ce8; border-radius: 50%; margin-top: 6px;"></div>
+                                <div class="c5" style="color: #ccc; font-size: 12px; cursor: pointer;">Respect</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="border-top: 1px solid #1a2332; border-bottom: 1px solid #1a2332; height: 700px; margin-top: 40px; display: flex;">
+                        <div style="width: 50%; border-right: 1px solid #1a2332;">
+                            <div style="width: 400px; height: 180px; background-color: #1a2332; border-radius: 5px; margin-left: 120px; margin-top: 60px; text-align: center;">
+                                <div style="color: white; font-size: 26px;  padding-top: 74px;">0/311</div>
+                                <div style="color: #ccc; font-size: 11px; margin-top: 16px;">MACHINE PROGRESS</div>
+                            </div>
+                            <div style="width: 90px; height: 90px; background-color: #111927; border-radius: 50%; margin-top: -210px; margin-left: 276px;">
+                                <img src="https://app.hackthebox.com/images/icons/ic-icons-kickass/ic-machines-big.svg" style="width: 70px; margin-left: 10px; margin-top: -6px;"/>
+                            </div>
+                            <div style="width:100%; margin-top: 200px; background-color: #1a2332; border-left: 10px solid #141d2b; border-right: 10px solid #141d2b;">
+                                <canvas id="canvas"></canvas>
+                            </div>
+                        </div>
+                        <div style="width: 50%; border-right: 1px solid #1a2332;">
+                            <div style="width: 400px; height: 180px; background-color: #1a2332; border-radius: 5px; margin-left: 120px; margin-top: 60px; text-align: center;">
+                                <div style="color: white; font-size: 26px;  padding-top: 74px;">0/362</div>
+                                <div style="color: #ccc; font-size: 11px; margin-top: 16px;">CHALLENGE PROGRESS</div>
+                            </div>
+                            <div style="width: 90px; height: 90px; background-color: #111927; border-radius: 50%; margin-top: -210px; margin-left: 276px;">
+                                <img src="https://app.hackthebox.com/images/icons/ic-icons-kickass/ic-challenges-big.svg" style="width: 70px; margin-left: 10px; margin-top: -5px;"/>
+                            </div>
+                            <div style="width:100%; margin-top: 200px; background-color: #1a2332; border-left: 10px solid #141d2b; border-right: 10px solid #141d2b;">
+                                <canvas id="canvass"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var xValues = ['JAN','FEB','MAR','ARP','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+        var yValues = [0,0,0,0,0,0,0,0,0,0,0,0];
+        
+        new Chart("myChart", {
+          type: "line",
+          data: {
+            labels: xValues,
+            datasets: [{
+              fill: false,
+              lineTension: 0,
+              backgroundColor: "#986ce8",
+              borderColor: "#986ce8",
+              data: [0,0,0,0,0,0,0,0,0,0,0,0]
+            },
+            {
+              fill: false,
+              lineTension: 0,
+              backgroundColor: "#0086ff",
+              borderColor: "#0086ff",
+              data: [1,1,1,1,1,1,1,1,1,1,1,1]
+            },
+            {
+              fill: false,
+              lineTension: 0,
+              backgroundColor: "#9fef00",
+              borderColor: "#9fef00",
+              data: [2,2,2,2,2,2,2,2,2,2,2,2]
+            },
+            {
+              fill: false,
+              lineTension: 0,
+              backgroundColor: "#ffaf00",
+              borderColor: "#ffaf00",
+              data: [3,3,3,3,3,3,3,3,3,3,3,3]
+            },
+            {
+              fill: false,
+              lineTension: 0,
+              backgroundColor: "#ff2548",
+              borderColor: "#ff2548",
+              data: [4,4,4,4,4,4,4,4,4,4,4,4]
+            }]
+          },
+          options: {
+            legend: {display: false},
+            scales: {
+              yAxes: [{ticks: {min: -1, max:5}}],
+            }
+          }
+        });
+
+  var color = Chart.helpers.color;
+  var config = {
+    type: 'radar',
+    data: {
+      labels: ['MORE OWNS NEEDED (0)', 'MORE OWNS NEEDED (1)', 'MORE OWNS NEEDED (2)', 'MORE OWNS NEEDED (3)', 'MORE OWNS NEEDED (4)',],
+      datasets: [ {
+        label: 'Player Avg', 
+        backgroundColor: color('greenyellow').alpha(0.2).rgbString(),
+        borderColor: 'greenyellow',
+        pointBackgroundColor: 'greenyellow',
+        data: [0.04,0.02,0.00,0.01,0.03],
+        
+      }]
+    },
+    options: {
+        elements: {
+            line: {
+                borderWidth: 1
+            }
+        }
+    }
+  };
+  var config2 = {
+    type: 'radar',
+    data: {
+      labels: ['REVERSING', 'CRYPTO', 'PWN', 'WEB', 'MISC', 'FORENSICS', 'MOBILE', 'OSINT', 'HARDWARE', 'GAMEPWN'],
+      datasets: [ {
+        label: 'Player Avg', 
+        backgroundColor: color('#a4b1cd').alpha(0.4).rgbString(),
+        borderColor: '#a4b1cd',
+        pointBackgroundColor: '#a4b1cd',
+        data: [0.05,0.06,0.03,0.07,0.01,0.08,0.00,0.04,0.02,0.09],
+        
+      }]
+    },
+    options: {
+        elements: {
+            line: {
+                borderWidth: 1
+            }
+        }
+    }
+  };
+
+  window.onload = function() {
+    window.myRadar = new Chart(document.getElementById("canvas"), config);
+    window.myRadar = new Chart(document.getElementById("canvass"), config2);
+  };
+    </script>
+</body>
+</html>

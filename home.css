@@ -1,0 +1,347 @@
+.home-container {
+    /* display: flex; */
+    height: 100vh;
+}
+
+/* Header */
+
+.home-container .header-container {
+    height: 64px;
+    margin-top: 0px;
+    transform: translateY(0px);
+    left: 212px;
+    right: 0px;
+    background-color: #1a2332;
+}
+
+.home-container .header-container .header-content {
+    height: 56px;
+    background-color: #1a2332;
+    padding-bottom: 8px;
+    display: flex;
+}
+
+/* Left */
+
+.home-container .header-container .header-content .content-left {
+    width: 60%;
+    height: 100%;
+    background-color: #1a2332;
+    padding-top: 7px;
+    display: flex;
+}
+
+.home-container .header-container .header-content .content-left .logo {
+    height: 35px;
+    width: 25%;
+    background-color: transparent;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.home-container .header-container .header-content .content-left .search {
+    height: 40px;
+    width: 30%;
+    margin-left: 30px;
+    margin-top: 5px;
+    background-color: #141d2b;
+    border-radius: 3px;
+}
+
+.home-container .header-container .header-content .content-left .search i {
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.home-container .header-container .header-content .content-left .search input {
+    height: 80%;
+    width: 80%;
+    background-color: transparent;
+    margin-top: 1px;
+    border: none;
+}
+
+.home-container .header-container .header-content .content-left button {
+    background-color: #111927;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    width: 150px;
+    color: greenyellow;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.home-container .header-container .header-content .content-left button:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+/* Right */
+
+.home-container .header-container .header-content .content-right {
+    width: 40%;
+    height: 100%;
+    background-color: #1a2332;
+    padding-top: 7px;
+    display: flex;
+}
+
+.home-container .header-container .header-content .content-right .shop {
+    color: #ccc;
+    font-size: 20px;
+    margin-top: -5px;
+    margin-left: 20px;
+    border-right: 1px solid black;
+    padding:15px ; 
+    cursor: pointer;
+} 
+
+.home-container .header-container .header-content .content-right .feedback {
+    color: #ccc;
+    font-size: 20px;
+    margin-top: -5px;
+    margin-left: 20px;
+    border-right: 1px solid black;
+    padding:15px ; 
+    cursor: pointer;
+} 
+
+.home-container .header-container .header-content .content-right .help {
+    color: #ccc;
+    font-size: 20px;
+    margin-top: -5px;
+    margin-left: 20px;
+    border-right: 1px solid black;
+    padding:15px ; 
+    cursor: pointer;
+}
+
+.home-container .header-container .header-content .content-right .user {
+    display: flex;
+    cursor: pointer;
+}
+
+.home-container .header-container .header-content .content-right .user .avatar {
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 2px;
+    background-image: url(https://www.hackthebox.com/storage/avatars/1fb81a0a5698382fcaa0ea2cef40a7b0.png?v=1);
+    background-size: 100% 100%;
+}
+
+.home-container .header-container .header-content .content-right .user .user-name {
+    color: white;
+    margin-left: 15px;
+    margin-top: 12px;
+}
+
+.home-container .header-container .header-content .content-right .user .down {
+    color: #ccc;
+    margin-left: 10px;
+    margin-top: 14px;
+}
+
+.home-container .header-container .header-content .content-right .connect {
+    height: 40px;
+    width: 150px;
+    color: red;
+    background-color: #111927;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+    display: flex;
+}
+
+.home-container .header-container .header-content .content-right .connect .connect-i {
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 12px;
+}
+
+.home-container .header-container .header-content .content-right .connect .text {
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.home-container .header-container .header-content .content-right .connect:hover {
+    background-color: #333;
+}
+
+/* Body-container */
+
+.home-container .body-container {
+    height: 693px;
+    display: flex;
+}
+
+/* Nav */
+
+.home-container .body-container .nav-container {
+    top: 0px;
+    /* max-height: calc(100% - 0px); */
+    transform: translateX(0%);
+    width: 210px;
+    background-color: #111927;
+    position: relative;
+}
+
+.home-container .body-container .nav-container:hover {
+    border-right: 0.5px solid greenyellow;
+}
+
+.home-container .body-container .nav-container .nav-top {
+    position: absolute;
+    width: 99%;
+    margin-top: 5px;
+}
+
+.home-container .body-container .nav-container .nav-top .children {
+    border: 1px solid #141d2b;
+    height: 40px;
+    width: 100%;
+    margin-top: 5px;
+    color: #ccc;
+    cursor: pointer;
+    display: flex;
+}
+
+.home-container .body-container .nav-container .nav-top .children i {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    color: greenyellow;
+}
+
+.home-container .body-container .nav-container .nav-top .children .text {
+    margin-top: 10px;
+}
+
+.home-container .body-container .nav-container .nav-top .children:hover {
+    background-color: #1a2332;
+}
+
+.home-container .body-container .nav-container .nav-down {
+    position: absolute;
+    width: 99%;
+    margin-top: 540px;
+}
+
+.home-container .body-container .nav-container .nav-down .children {
+    border: 1px solid #141d2b;
+    height: 40px;
+    width: 100%;
+    margin-top: 5px;
+    color: #ccc;
+    cursor: pointer;
+    display: flex;
+}
+
+.home-container .body-container .nav-container .nav-down .children i {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    color: greenyellow;
+}
+
+.home-container .body-container .nav-container .nav-down .children .text {
+    margin-top: 10px;
+}
+
+.home-container .body-container .nav-container .nav-down .children:hover {
+    background-color: #1a2332;
+}
+
+/* Body-content */
+
+.home-container .body-container .body-content {
+    width: 100%;
+    background-color: #141d2b;
+}
+
+.home-container .body-container .body-content .body-top {
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+
+.home-container .body-container .body-content .body-top .top-left {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    color: #ccc;
+}
+
+.home-container .body-container .body-content .body-top .top-left .children {
+    margin-left: 30px;
+    padding-top: 10px;
+    border-right: 1px solid #333;
+    padding-right: 20px;
+}
+
+.home-container .body-container .body-content .body-top .top-left .children .text {
+    cursor: pointer;
+    color: white;
+}
+
+.home-container .body-container .body-content .body-top .top-left .children .text:hover {
+    color: greenyellow;
+}
+
+.home-container .body-container .body-content .body-top .top-right {
+    height: 100%;
+    color: #ccc;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+.home-container .body-container .body-content .body-center {
+    width: 100%;
+    height: 280px;
+    display: flex;
+}
+
+/* .home-container .body-container .body-content .body-center .center-left {
+    margin-left: 30px;
+    margin-right: 10px;
+    background-image: url(https://www.hackthebox.com/storage/banners/a4f23670e1833f3fdb077ca70bbd5d66.jpg);
+    background-size: cover;
+} */
+
+.home-container .body-container .body-content .body-center .center-right {
+    display: flex;
+    margin-right: 20px;
+}
+
+.home-container .body-container .body-content .body-center .center-right .first {
+    border-right: 1px solid #141d2b;
+    background-color: #1a2332;
+    border-radius: 10px;
+}
+
+.home-container .body-container .body-content .body-center .center-right .first .Ox .point:hover {
+    width: 12px !important;
+    height: 12px !important;
+    margin-top: -2px !important;
+}
+
+.home-container .body-container .body-content .body-center .center-right .last {
+    border-left: 1px solid #141d2b;
+    border-radius: 10px;
+    background-color: #1a2332;
+}
+
+.home-container .body-container .body-content .body-down .main .tag:hover {
+    /* background-color: white !important; */
+    height: 270px !important;
+    width: 220px !important;
+    margin-top: -5px !important;
+    margin-left: -5px !important;
+}
